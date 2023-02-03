@@ -8,13 +8,31 @@
 </head>
 <body>
     <form action="">
-        <fieldset>
-            <legend>Deixe um comentário</legend>
-            <label for="nome">Nome:</label>
-            <input type="text" minlength="3" id="nome">
+        <h1>Deixe um comentário</h1>
+        <form>
+            <div>
+                <label for="nome" class="obrigatorio">Nome: <br></label>
+                <input type="text" name="nome" id="nome" size="30" required>
+            </div>
 
-            
-        </fieldset>
+            <div>
+                <label for="email" class="obrigatorio">E-mail: <br></label>
+                <input type="mail" name="email" id="email" size="29" required>
+            </div>
+
+            <div>
+                <label for="">Website: <br></label>
+                <input type="search" name="q">
+            </div>
+
+            <div class="field">
+                <label for="mensagem">Comentário: <br></label>
+                <textarea name="mensagem" id="mensagem"></textarea>
+            </div>
+            <legend>Observação: Seu comentário será publicado após passar pelo moderador</legend>
+
+            <input type="submit" name="acao" value="Enviar Comentário">
+        
     </form>
 </body>
 </html>
